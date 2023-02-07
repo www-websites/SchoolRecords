@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>Сторінка форми</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20230207211421">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap&_v=20230207211421" rel="stylesheet">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<a href="#" class="header__logo"><img src="img/logo.svg" alt=""></a>
+				<div class="header__menu menu">
+					<button type="button" class="menu__icon icon-menu"><span></span></button>
+					<nav class="menu__body">
+						<ul data-spollers="768" class="menu__list">
+							<!-- <li class="menu__item menu__category">
+						<div data-spoller class="menu__link">Категорія</div>
+						<div class="menu__sub sub-menu">
+							<ul class="sub-menu__items">
+								<li class="sub-menu__item"><a href="#" class="sub-menu__link">Спорт</a></li>
+								<li class="sub-menu__item"><a href="#" class="sub-menu__link">Колекції</a></li>
+								<li class="sub-menu__item"><a href="#" class="sub-menu__link">Кулінарія</a></li>
+								<li class="sub-menu__item"><a href="#" class="sub-menu__link">Мистецтво</a></li>
+								<li class="sub-menu__item"><a href="#" class="sub-menu__link">Дічь</a></li>
+							</ul>
+						</div>
+					</li> -->
+							<li class="menu__item"><a href="" class="menu__link">Про нас</a></li>
+							<li class="menu__item"><a href="" class="menu__link">Як стати рекордсменом</a></li>
+							<li class="menu__item"><a href="" class="menu__link">Подати заявку</a></li>
+							<li class="menu__item"><a href="" class="menu__link">Підтримка</a></li>
+						</ul>
+					</nav>
+					<!-- <button type="button" class="header__search-icon _icon-search"></button>
+			<div class="header__search search-header">
+				<form action="#" class="search-header__form">
+					<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Пошук"
+						class="search-header__input">
+					<button type="submit" class="search-header__search _icon-search"></button>
+				</form>
+			</div> -->
+				</div>
+			</div>
+		</header>
+		<main class="page">
+			<section class="page__banner banner">
+				<div class="banner__container">
+					<h1 class="banner__title"><span>Книга рекордів</span>Бориспільського академічного ліцею</h1>
+					<h2 class="banner__sub-title">книга рекордів школи</h2>
+				</div>
+			</section>
+			<section class="page__send send">
+				<div class="send__container">
+					<h1 class="send__title title title_margin">Заявка на рекорд</h1>
+					<form data-ajax method="POST" action="sendmail.php" class="send__form form">
+						<div class="form__item">
+							<label for="label-input" class="form__label">Номінація рекорду:</label>
+							<span class="form__hint">Наприклад: «Найбільша колекція склянок»</span>
+							<input id="label-input" autocomplete="off" type="text" name="label" data-error="Error" placeholder="Введіть номінацію рекорду" class="form__input">
+						</div>
+						<div class="form__item">
+							<label for="description-input" class="form__label">Опис:</label>
+							<textarea id="description-input" autocomplete="off" name="description" placeholder="Опис" data-error="Ошибка" class="form__input"></textarea>
+						</div>
+						<div class="form__item">
+							<div class="form__label">Рекордсмен</div>
+							<div class="form__block">
+								<label for="name-input" class="form__sub-title">Ім’я:</label>
+								<input id="name-input" autocomplete="off" type="text" name="name" data-error="Error" placeholder="Ім’я" class="form__input">
+								<label for="age-input" class="form__sub-title">Вік:</label>
+								<input id="age-input" autocomplete="off" type="text" name="age" data-error="Error" placeholder="Вік" class="form__input">
+								<label for="grade-input" class="form__sub-title">Клас:</label>
+								<input id="grade-input" autocomplete="off" type="text" name="grade" data-error="Error" placeholder="Клас" class="form__input">
+								<label for="num-input" class="form__sub-title">Номер:</label>
+								<input id="num-input" autocomplete="off" type="text" name="num" data-error="Error" placeholder="+38 099 009 0990" class="form__input">
+							</div>
+						</div>
+						<button type="submit" class="form__button button button_solid">Надіслати</button>
+					</form>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer__copyright">© Книга рекордів Бориспільського академічного ліцею 2023. Всі права захищені.</div>
+			</div>
+		</footer>
+	</div>
+	<div id="cardPopup" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close"><span></span></button>
+				<div class="popup__text"></div>
+			</div>
+		</div>
+	</div>
+	<script src="js/app.min.js?_v=20230207211421"></script>
+</body>
+
+</html>
